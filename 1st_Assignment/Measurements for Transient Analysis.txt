@@ -1,0 +1,6 @@
+  Measurements for Transient Analysis
+
+eksodos_tphl        =  3.685112e-10 targ=  1.468511e-09 trig=  1.100000e-09
+eksodos_tplh        =  1.432804e-09 targ=  3.532804e-09 trig=  2.100000e-09
+eksodos_rt          =  2.071627e-09 targ=  4.896648e-09 trig=  2.825021e-09
+eksodos_ft          =  4.538769e-10 targ=  1.763003e-09 trig=  1.309126e-09

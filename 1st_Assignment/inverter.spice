@@ -1,0 +1,27 @@
+*Circuit_Inverter
+
+.INCLUDE "Models_Cmos"
+
+
+*Netlist_Simulation_Circuit
+
+M1000 out in vdd vdd CMOSP w=3u l=2u
++  ad=19p pd=18u as=19p ps=18u
+M1001 out in gnd gnd CMOSN w=3u l=2u
++  ad=19p pd=18u as=19p ps=18u
+C0 in gnd 2.5fF
+C1 in vdd 2.5fF
+
+Vgnd 0 0v DC
+Vvdd vdd gnd 2.4999v DC
+Vin in gnd PWL (0n 0v 1n 0v 1.2n 2.5v 2n 2.5v 2.2n 0v)
+
+.tran 10p 8n
+
+.meas tran eksodos_tphl trig v(in) val=1.25v rise=1 targ v(out) val=1.25v fall=1
+.meas tran eksodos_tplh trig v(in) val=1.25v fall=1 targ v(out) val=1.25v rise=1
+
+.meas tran eksodos_rt trig v(out) val=0.25v rise=1 targ v(out) val=2.25v rise=1
+.meas tran eksodos_ft trig v(out) val=2.25v fall=1 targ v(out) val=0.25v fall=1
+
+.end
