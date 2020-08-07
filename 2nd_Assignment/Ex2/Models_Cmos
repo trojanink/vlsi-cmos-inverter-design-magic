@@ -1,0 +1,27 @@
+*                                                                               
+* DATE: Jun 11/01                                                               
+* LOT: T14Y                  WAF: 03                                            
+* DIE: N_Area_Fring          DEV: N3740/10                                      
+* Temp= 27                                                                      
+.MODEL CMOSN NMOS (                                 LEVEL  = 3                  
++ TOX    = 5.7E-9          NSUB   = 1E17            GAMMA  = 0.4317311          
++ PHI    = 0.7             VTO    = 0.4238252       DELTA  = 0                  
++ UO     = 425.6466519     ETA    = 0               THETA  = 0.1754054          
++ KP     = 2.501048E-4     VMAX   = 8.287851E4      KAPPA  = 0.1686779          
++ RSH    = 4.062439E-3     NFS    = 1E12            TPG    = 1                  
++ XJ     = 3E-7            LD     = 3.162278E-11    WD     = 1.232881E-8        
++ CGDO   = 6.2E-10         CGSO   = 6.2E-10         CGBO   = 1E-10              
++ CJ     = 1.81211E-3      PB     = 0.5             MJ     = 0.3282553          
++ CJSW   = 5.341337E-10    MJSW   = 0.5             )                           
+
+.MODEL CMOSP PMOS (                                 LEVEL  = 3                  
++ TOX    = 5.7E-9          NSUB   = 1E17            GAMMA  = 0.6348369          
++ PHI    = 0.7             VTO    = -0.5536085      DELTA  = 0                  
++ UO     = 250             ETA    = 0               THETA  = 0.1573195          
++ KP     = 5.194153E-5     VMAX   = 2.295325E5      KAPPA  = 0.7448494          
++ RSH    = 30.0776952      NFS    = 1E12            TPG    = -1                 
++ XJ     = 2E-7            LD     = 9.968346E-13    WD     = 5.475113E-9        
++ CGDO   = 6.66E-10        CGSO   = 6.66E-10        CGBO   = 1E-10              
++ CJ     = 1.893569E-3     PB     = 0.9906013       MJ     = 0.4664287          
++ CJSW   = 3.625544E-10    MJSW   = 0.5             )                           
+*                                                         

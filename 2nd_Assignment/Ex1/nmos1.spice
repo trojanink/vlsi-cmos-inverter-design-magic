@@ -1,0 +1,27 @@
+.include "Models_Cmos"
+
+M1000  vds vgs gnd 0 CMOSN w=3u l=2u
++ ad=19p pd=18u as=19p ps=18u
+
+Vvds vds gnd 0v DC
+
+Vvgs vgs gnd 0v DC
+
+
+.dc Vvds 0v 2.5v 0.25v Vvgs 0v 2.5v 0.25v
+
+.print dc vds vgs i(Vvds)
+
+.control
+		set hcopydevtype=postscript
+		set hcopypscolor=true
+		set color0=black
+		set color1=white
+		set color2=rgb:f/3/3
+		set color3=rgb:f/0/0
+
+
+
+.endc
+
+.end

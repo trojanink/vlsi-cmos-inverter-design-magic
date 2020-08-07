@@ -1,0 +1,25 @@
+
+.include "Models_Cmos"
+
+M1001 out in gnd gnd CMOSN w=3u l=2u
++ ad=19p pd=18u as=19p ps=18u 
+M1000 out in Vdd Vdd CMOSP w=3u l=2u
++ ad=19p pd=18u as=19p ps=18u
+
+C0 out gnd 2.3fF 
+C1 in gnd 3.9fF  
+
+Vin in gnd 0v DC
+VVdd Vdd gnd 2.5v DC
+
+
+.dc Vin 0v 2.5v 0.25v
+
+.control
+			set hcopydevtype=postscript
+			set hcopypscolor=true
+			set color0=black
+			set color1=white
+			set color2=rgb:9/f/3
+			set color3=rgb:f/6/6
+

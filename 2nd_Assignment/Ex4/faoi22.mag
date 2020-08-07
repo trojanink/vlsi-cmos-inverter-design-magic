@@ -1,0 +1,104 @@
+magic
+tech scmos
+timestamp 1477902810
+<< nwell >>
+rect -74 3 -37 27
+<< polysilicon >>
+rect -68 8 -66 10
+rect -60 8 -58 10
+rect -52 8 -50 10
+rect -44 8 -42 10
+rect -68 -13 -66 5
+rect -60 -13 -58 5
+rect -52 -13 -50 5
+rect -44 -13 -42 5
+rect -68 -18 -66 -16
+rect -60 -18 -58 -16
+rect -52 -18 -50 -16
+rect -44 -18 -42 -16
+<< ndiffusion >>
+rect -69 -16 -68 -13
+rect -66 -16 -65 -13
+rect -61 -16 -60 -13
+rect -58 -16 -52 -13
+rect -50 -16 -49 -13
+rect -45 -16 -44 -13
+rect -42 -16 -41 -13
+<< pdiffusion >>
+rect -69 5 -68 8
+rect -66 5 -65 8
+rect -61 5 -60 8
+rect -58 5 -57 8
+rect -53 5 -52 8
+rect -50 5 -49 8
+rect -45 5 -44 8
+rect -42 5 -41 8
+<< metal1 >>
+rect -69 22 -65 26
+rect -61 22 -57 26
+rect -53 22 -49 26
+rect -45 22 -41 26
+rect -73 9 -69 22
+rect -65 16 -45 19
+rect -65 9 -61 16
+rect -49 9 -45 16
+rect -41 9 -37 22
+rect -57 1 -53 5
+rect -73 -2 -37 1
+rect -65 -12 -61 -2
+rect -73 -20 -69 -16
+rect -49 -20 -45 -16
+rect -41 -20 -37 -16
+rect -73 -24 -52 -20
+rect -49 -24 -37 -20
+rect -49 -28 -45 -24
+rect -74 -32 -73 -28
+rect -69 -32 -65 -28
+rect -61 -32 -57 -28
+rect -53 -32 -49 -28
+rect -45 -32 -41 -28
+<< metal2 >>
+rect -52 -24 -45 -20
+<< ntransistor >>
+rect -68 -16 -66 -13
+rect -60 -16 -58 -13
+rect -52 -16 -50 -13
+rect -44 -16 -42 -13
+<< ptransistor >>
+rect -68 5 -66 8
+rect -60 5 -58 8
+rect -52 5 -50 8
+rect -44 5 -42 8
+<< ndcontact >>
+rect -73 -16 -69 -12
+rect -65 -16 -61 -12
+rect -49 -16 -45 -12
+rect -41 -16 -37 -12
+<< pdcontact >>
+rect -73 5 -69 9
+rect -65 5 -61 9
+rect -57 5 -53 9
+rect -49 5 -45 9
+rect -41 5 -37 9
+<< psubstratepcontact >>
+rect -73 -32 -69 -28
+rect -65 -32 -61 -28
+rect -57 -32 -53 -28
+rect -49 -32 -45 -28
+rect -41 -32 -37 -28
+<< nsubstratencontact >>
+rect -73 22 -69 26
+rect -65 22 -61 26
+rect -57 22 -53 26
+rect -49 22 -45 26
+rect -41 22 -37 26
+<< labels >>
+rlabel metal1 -40 -1 -38 -1 7 out
+rlabel metal1 -73 -1 -71 -1 3 in
+rlabel metal1 -59 24 -57 24 5 vdd
+rlabel polysilicon -68 8 -66 10 1 a
+rlabel polysilicon -60 8 -58 10 1 b
+rlabel polysilicon -52 8 -50 10 1 d
+rlabel polysilicon -44 8 -42 10 1 c
+rlabel metal1 -74 -32 -37 -28 5 gnd
+<< end >>

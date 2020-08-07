@@ -1,0 +1,27 @@
+.include "Models_Cmos"
+
+.ic v(x)=2.5v
+
+M1000 x vgs 0 0 CMOSN w=3u l=2u
+
+C0 x gnd 0.1pF
+
+Vvgs vgs 0 2.5v DC
+
+
+.tran 5p 2ns
+
+
+.print ic v(x)
+
+.control
+		set hcopydevtype=postscript
+		set hcopypscolor=true
+		set color0=black
+		set color1=white
+		set color2=rgb:f/3/3
+		set color3=rgb:f/0/0
+.endc
+
+
+.end

@@ -1,0 +1,30 @@
+.include "Models_Cmos"
+
+M1001 vdd  g out bulk  CMOSN w=3u l=2u
+M1002 out  g out2 bulk CMOSN w=3u l=2u
+
+Cout out 0 0.1pf
+
+Vbulk bulk 0 0v DC
+Vvdd vdd 0 2.5v DC
+
+Vg g 0 pwl
++ 0 0v
++ 1ns 2.5v
+
+.meas tran vf find v(out) at= 10n
+
+.meas tran vtn param = '2.5-vf'
+
+.tran 1ps 10ns
+
+.control
+		set hcopydevtype=postscript
+		set hcopypscolor=true
+		set color0=black
+		set color1=white
+		set color2=rgb:f/3/3
+		set color3=rgb:9/f/3
+
+.endc
+
